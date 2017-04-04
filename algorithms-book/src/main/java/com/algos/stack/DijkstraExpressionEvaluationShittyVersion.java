@@ -1,4 +1,4 @@
-package com.algos;
+package com.algos.stack;
 
 import java.util.Stack;
 
