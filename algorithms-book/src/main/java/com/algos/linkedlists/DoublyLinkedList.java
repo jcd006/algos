@@ -11,5 +11,7 @@ public class DoublyLinkedList {
         Node previous;
     }
 
-    public void addFirst()x
+    public void addFirst() {
+
+    }
 }

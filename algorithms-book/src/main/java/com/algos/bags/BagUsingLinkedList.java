@@ -1,19 +1,16 @@
-package com.algos.stack;
+package com.algos.bags;
 
 import java.util.Iterator;
 
 /**
  * Created by kiran on 4/3/2017.
  *
- * Model a stack using LinkedList as the backing collection
+ * Model a Bag using LinkedList as the backing collection
  *
- * Push would be equivalent to adding an item at the beginning of the linked list
- *
- * Pop would be equivalent to removing an itme from the beginning of the linked list
- *
- *
+ * Adding would be equivalent to adding an item at the beginning of the linked list
+ * 
  */
-public class StackUsingLinkedList<T> implements Iterable<T> {
+public class BagUsingLinkedList<T> implements Iterable<T> {
 
     Node first;
 
@@ -31,25 +28,12 @@ public class StackUsingLinkedList<T> implements Iterable<T> {
      *
      * @param item
      */
-    public void push(T item)  {
+    public void add(T item)  {
         Node oldFirst = first;
         first = new Node();
         first.item = item;
         first.next = oldFirst;
         index++;
-    }
-
-    /**
-     * Remove item from the beginning of list
-     *
-     * This operation is independent of the size of the list!!!
-     * @return
-     */
-    public T pop() {
-        T item = first.item;
-        first = first.next;
-        index--;
-        return item;
     }
 
     public boolean isEmpty() {

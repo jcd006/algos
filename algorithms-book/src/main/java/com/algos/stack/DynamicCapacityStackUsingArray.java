@@ -6,13 +6,13 @@ import java.util.NoSuchElementException;
 /**
  * Created by kiran on 3/27/2017.
  */
-public class DynamicCapacityStack<T> implements Iterable<T> {
+public class DynamicCapacityStackUsingArray<T> implements Iterable<T> {
 
     int index;
 
     T [] dataStore;
 
-    public DynamicCapacityStack() {
+    public DynamicCapacityStackUsingArray() {
         dataStore = (T[]) new Object [1];
     }
 
@@ -51,7 +51,7 @@ public class DynamicCapacityStack<T> implements Iterable<T> {
     }
 
     public static void main(String[] args) {
-       DynamicCapacityStack<String> stack = new DynamicCapacityStack<String>();
+       DynamicCapacityStackUsingArray<String> stack = new DynamicCapacityStackUsingArray<String>();
         stack.push("1");
         stack.push("3");
         stack.push("4");
