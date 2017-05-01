@@ -8,7 +8,7 @@ import java.util.Iterator;
  * Model a Bag using LinkedList as the backing collection
  *
  * Adding would be equivalent to adding an item at the beginning of the linked list
- * 
+ *
  */
 public class BagUsingLinkedList<T> implements Iterable<T> {
 
