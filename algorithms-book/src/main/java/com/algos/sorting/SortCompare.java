@@ -1,6 +1,6 @@
 package com.algos.sorting;
 
-import com.algos.problems.StopWatch;
+import com.algos.utils.StopWatch;
 
 /**
  * Created by kiran on 4/30/2017.

@@ -1,4 +1,4 @@
-package com.algos.problems;
+package com.algos.utils;
 
 /**
  * Created by kiran on 4/10/2017.
