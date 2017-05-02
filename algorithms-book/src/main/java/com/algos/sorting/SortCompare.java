@@ -48,6 +48,9 @@ public class SortCompare {
         } else if(alg.equalsIgnoreCase("Selection")) {
             SelectionSort sort = new SelectionSort();
             sort.sort(a);
+        } else if(alg.equalsIgnoreCase("Shell")) {
+            ShellSort sort = new ShellSort();
+            sort.sort(a);
         }
         return watch.elapsedTime();
     }
