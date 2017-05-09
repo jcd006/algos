@@ -1,7 +1,5 @@
 package com.algos.problems;
 
-import java.util.Arrays;
-
 /**
  * Created by kiran on 4/12/2017.
  */
