@@ -34,13 +34,13 @@ public class InsertionSort {
     }
 
     public static void main(String[] args) {
-        InsertionSort selectionSort = new InsertionSort();
+        InsertionSort insertionSort = new InsertionSort();
         Integer[] a = new Integer[10];
         for(int i=0; i<a.length; i++) {
             a[i] = (int) (Math.random() * 10);
         }
-        selectionSort.print(a);
-        selectionSort.sort(a);
-        selectionSort.print(a);
+        insertionSort.print(a);
+        insertionSort.sort(a);
+        insertionSort.print(a);
     }
 }
