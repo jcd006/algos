@@ -3,17 +3,17 @@ package com.algos.priorityqueues;
 /**
  * Created by kiran on 5/15/2017.
  */
-public class MaxPQUsingArray {
+public class MaxPQUsingArray<T extends Comparable<T>> {
 
-    private Integer [] keys;
+    private T [] keys;
 
     int index;
 
     MaxPQUsingArray(int initialSize) {
-        keys =  new Integer[initialSize];
+        keys = (T[]) new Comparable[initialSize];
     }
 
-    public void insert(Integer key) {
+    public void insert(T key) {
         keys[index++] = key;
     }
 
@@ -44,7 +44,7 @@ public class MaxPQUsingArray {
     }
 
     public static void main(String [] args) {
-        MaxPQUsingArray maxPQ = new MaxPQUsingArray(10);
+        MaxPQUsingArray<Integer> maxPQ = new MaxPQUsingArray(10);
         maxPQ.insert(3);
         maxPQ.insert(1);
         maxPQ.insert(7);
@@ -53,6 +53,5 @@ public class MaxPQUsingArray {
         System.out.println(maxPQ.delMax());
         maxPQ.insert(8);
         System.out.println(maxPQ.delMax());
-        System.out.println(maxPQ);
     }
 }
