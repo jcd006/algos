@@ -36,13 +36,13 @@ public class UnorderedLinkedListST<Key, Value> extends SymbolTable<Key, Value> i
 
     @Override
     public void put(Key key, Value value) {
-        for(Node node = first; node.next!=null; node = node.next ) {
+        for(Node node = first; node!=null; node = node.next ) {
             if(key.equals(node.key)) {
                 node.value = value;
-            } else {
-                first = new Node(key, value, first);
+                return;
             }
         }
+        first = new Node(key, value, first);
     }
 
     @Override

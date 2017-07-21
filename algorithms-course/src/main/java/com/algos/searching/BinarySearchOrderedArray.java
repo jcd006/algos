@@ -6,14 +6,16 @@ import java.util.Iterator;
 
 /**
  * Created by kiran on 6/12/2017.
+ *
+ * Implements Binary Search in an ordered array
  */
-public class BinarySearchST<Key extends Comparable<Key>, Value> {
+public class BinarySearchOrderedArray<Key extends Comparable<Key>, Value> {
 
     private Key [] keys;
     private Value [] vals;
     private int N;
 
-    public BinarySearchST(int capacity) {
+    public BinarySearchOrderedArray(int capacity) {
         keys = (Key[]) new Comparable[capacity];
         vals = (Value[]) new Object[capacity];
         N=0;
@@ -108,7 +110,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
     public static void main(String[] args) {
-        BinarySearchST<Integer, String> bst = new BinarySearchST<>(10);
+        BinarySearchOrderedArray<Integer, String> bst = new BinarySearchOrderedArray<>(10);
         bst.put(1, "a");
         bst.put(3, "c");
         bst.put(5, "e");
@@ -116,6 +118,8 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         bst.put(4, "d");
 
         Iterator<Integer> iterator = bst.keys(1, 3).iterator();
+
+        System.out.println(bst.ceiling(3));
         while(iterator.hasNext()) {
             System.out.println(iterator.next());
         }
